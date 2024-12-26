@@ -1,0 +1,97 @@
+/*******
+Example solution for: 
+
+https://www.reddit.com/r/Frontend/comments/1apk95f/how_would_you_build_something_like_this/
+
+https://imgur.com/a/o9u3hvf
+*******/
+
+/* Essence of the solution: */
+ol.steps {
+    /* margin: 0 0 10rem; */
+    padding: 0;
+    position: relative;
+    counter-reset: section-number;
+  
+    li {
+      counter-increment: section-number;
+      display: grid;
+      grid-template-columns: 1fr 2rem 1fr;
+  
+      &:not(:last-of-type) {
+        margin-bottom: 2rem;
+      }
+  
+      &::before {
+        content: counter(section-number);
+        order: 2;
+        width: 2rem;
+        height: 2rem;
+        display: inline-flex
+;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        /* border: 1rem solid white; */
+        margin-inline: -1rem;
+        color: rgb(235 244 255);
+        background: linear-gradient(to bottom, blue 25vw, #ebf4ff 0%) fixed;
+        /* z-index: -1; */
+    }
+    }
+  
+    &::after {
+      content: "";
+      display: inline-block;
+      height: calc(100% + 1rem);
+      width: 4px;
+      margin-top: -30px;
+      background: linear-gradient(to bottom, blue 25vw, #9dceff 0%) fixed;
+      position: absolute;
+      /* left: calc(50% - 1px); */
+      margin-left: 70px;
+      top: 1rem;
+    }
+  }
+  
+  /* Unimportant stuff, just for demo purposes: */
+
+  
+  .block {
+    /* border: 1px solid silver;*/
+    /* background-color: aliceblue;  */
+    /* aspect-ratio: 1.5 / 1; */
+  }
+  
+  .block--left {
+    order: 1;
+  }
+  
+  .block--right {
+    order: 3;
+  }
+  
+  .tt{
+    width: 55%;
+    margin: auto;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    color: #004ca2;
+}
+.hh{
+  background: #e6f1ff;
+    position: relative;
+
+}
+
+
+
+.hh::before{
+  
+    content: "";
+    background: linear-gradient(75deg, #e9f3ff, #9dceff);
+    position: absolute;
+    transform: rotate(20deg);
+
+}
