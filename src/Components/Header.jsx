@@ -40,28 +40,28 @@ const Header = (props) => {
                             <img className="xc nm" src={logo_dark} alt="Logo Dark" />
                         </a>
                         <button className="po rc" onClick={() => setNavigationOpen(!navigationOpen)}>
-                            <span className="rc i pf re pd">
+                            <span className="rc i pf re pd ">
                                 <span className="du-block h q vd yc">
                                     <span
-                                        className={`rc i r s eh um tg te rd eb ml jl dl ${navigationOpen ? "" : "ue el"
+                                        className={`rc i r s bg-white um tg te rd eb ml jl dl ${navigationOpen ? "" : "ue el"
                                             }`}
                                     ></span>
                                     <span
-                                        className={`rc i r s eh um tg te rd eb ml jl fl ${navigationOpen ? "" : "ue qr"
+                                        className={`rc i r s bg-white um tg te rd eb ml jl fl ${navigationOpen ? "" : "ue qr"
                                             }`}
                                     ></span>
                                     <span
-                                        className={`rc i r s eh um tg te rd eb ml jl gl ${navigationOpen ? "" : "ue hl"
+                                        className={`rc i r s bg-white um tg te rd eb ml jl gl ${navigationOpen ? "" : "ue hl"
                                             }`}
                                     ></span>
                                 </span>
                                 <span className="du-block h q vd yc lf">
                                     <span
-                                        className={`rc eh um tg ml jl el h na r ve yc ${navigationOpen ? "" : "sd dl"
+                                        className={`rc bg-white um tg ml jl el h na r ve yc ${navigationOpen ? "" : "sd dl"
                                             }`}
                                     ></span>
                                     <span
-                                        className={`rc eh um tg ml jl qr h s pa vd rd ${navigationOpen ? "" : "sd rr"
+                                        className={`rc bg-white um tg ml jl qr h s pa vd rd ${navigationOpen ? "" : "sd rr"
                                             }`}
                                     ></span>
                                 </span>
@@ -70,7 +70,7 @@ const Header = (props) => {
                     </div>
 
                     <div
-                        className={`vd wo/4 sd qo f ho oo wf yf text-white ${navigationOpen ? "d hh rm sr td ud qg ug jc yh text-black" : ""
+                        className={`${navigationOpen ? "d hh rm sr td ud qg ug jc yh text-black" : "vd wo/4 sd qo f ho oo wf yf text-white "
                             } ${stickyMenu ? "col-black" : ""}`}
                     >
                         <nav>
@@ -107,7 +107,7 @@ const Header = (props) => {
                                             <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
                                         </svg>
                                     </Link>
-                                    <ul className={`a ${navigationOpen ? "tc" : ""}`}>
+                                    <ul className={`a ${navigationOpen ? "tc text-black" : " text-black"}`}>
                                         <li>
                                             <Link
                                                 to="/services"
@@ -168,21 +168,6 @@ const Header = (props) => {
                                 </li>
                             </ul>
                         </nav>
-
-                        <div className="tc wf ig pb no">
-                            <div className="pc h io pa ra">
-                                <label>
-                                    <input
-                                        type="checkbox"
-                                        checked={darkMode}
-                                        onChange={() => setDarkMode(!darkMode)}
-                                        className="pf vd yc uk h r za ab"
-                                    />
-                                    <img className="xc nm" src={icon_moon} alt="Moon" />
-                                </label>
-                            </div>
-                            
-                        </div>
                     </div>
                 </div>
             </header>
