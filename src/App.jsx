@@ -9,6 +9,7 @@ import Contact from './Pages/Contact'
 import './Pages/bundle.js'
 import './Pages/style.css'
 import Services from './Pages/Services.jsx'
+import BlogSingle from './Pages/BlogSingle.jsx'
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <Route path='/about-us' element={<><AboutUs/></>} />
         <Route path='/services' element={<><Services/></>}/>
         <Route path='/blogs' element={<><Blogs/></>} />
+        <Route path='/blogs-single/:blogId' element={<><BlogSingle/></>} />
         <Route path='/contact' element={<><Contact/></>} />
       </>
     )

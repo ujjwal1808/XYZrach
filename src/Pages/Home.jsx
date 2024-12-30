@@ -71,7 +71,6 @@ import Footer from "../Components/Footer.jsx";
 
 function Home() {
 
-
     useEffect(() => {
         const handleScroll = () => {
             setStickyMenu(window.pageYOffset > 20);
@@ -80,21 +79,10 @@ function Home() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-
-
-    const [sectionTitle] = useState("We Offer Great Affordable Premium Prices.");
     const [sectionTitleText] = useState(
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using."
     );
-    const [filterTab, setFilterTab] = useState(1); // State for the active tab
-    const brands = [
-        { id: 1, light: brandLight01, dark: brandDark01 },
-        { id: 2, light: brandLight02, dark: brandDark02 },
-        { id: 3, light: brandLight03, dark: brandDark03 },
-        { id: 4, light: brandLight04, dark: brandDark04 },
-        { id: 5, light: brandLight05, dark: brandDark05 },
-        { id: 6, light: brandLight06, dark: brandDark06 },
-    ];
+    
 
     const blogs = [
         {
@@ -119,10 +107,6 @@ function Home() {
             author: "Musharof Chy",
         },
     ];
-
-
-
-
 
     return (
 
