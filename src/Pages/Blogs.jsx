@@ -6,6 +6,7 @@ import blog01 from "./images/blog-01.png"
 import blog02 from "./images/blog-02.png"
 import blog03 from "./images/blog-03.png"
 import iconMan from "./images/icon-man.svg";
+import iconCalendar from "./images/icon-calender.svg";
 import blogs from './blogsList'
 // import iconCalendar from "./images/icon-calender.svg";
 import Footer from '../Components/Footer'
@@ -26,31 +27,42 @@ const Blogs = () => {
                     </p>
                 </div>
             </div>
-            
-            <section className="ji gp uq">
-                <div className="animate_top bb ze rj ki xn vq">
-                    <h2 className="fk vj pr kk wm on/5 gq/2 bb _b">Our Blogs</h2>
-                    <p className="bb on/5 wo/5 hq">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, corporis consequatur? Aliquid accusantium nam maiores ullam eius at nihil ea illo distinctio dolores, pariatur nisi quidem sit reiciendis. Aliquid, provident?</p>
-                </div>
-                <div className="bb ye ki xn vq jb jo oo">
-                    {blogs.map((blog) => (
-                        <div key={blog.id} className="animate_top sg vk rm xm" style={{ marginLeft: 20 }}>
-                            <div className="c rc i z-1 pg">
-                                <img className="w-full" src={blog.image} alt="Blog" />
-                                <div className="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10">
-                                    <Link to={`/blogs-single/${blog.id}`} className="vc ek rg lk gh sl ml il gi hi">
-                                        Read More
-                                    </Link>
+
+            <section className="ji gp vq">
+                
+
+                <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:mx-10 min-[220px]:mx-10">
+                        {blogs.map((blog) => (
+                            <div key={blog.id} className="animate_top vg vk rm xm" style={{ marginLeft: 20, background: 'white' }}>
+                                <div className="c rc i z-1 pg">
+                                    <img className="w-full" src={blog.image} alt="Blog" />
+
+                                    <div className="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10">
+                                        <Link to={`/blogs-single/${blog.id}`} className="vc ek rg lk gh sl ml il gi hi">
+                                            Read More
+                                        </Link>
+                                    </div>
+                                </div>
+
+                                <div className="yh">
+                                <div className="tc uf wf ag jq">
+                                        <div className="tc wf ag">
+                                            <img src={iconMan} alt="User" />
+                                            <p>{blog.author}</p>
+                                        </div>
+                                        <div className="tc wf ag">
+                                            <img src={iconCalendar} alt="Calendar" />
+                                            <p>{blog.date}</p>
+                                        </div>
+                                    </div>
+                                    <h4 className="ek tj ml il kk wm xl eq lb">
+                                        <Link to={`/blogs-single/${blog.id}`}>{blog.title}</Link>
+                                    </h4>
                                 </div>
                             </div>
-                            <div className="yh">
-                                <h4 className="ek tj ml il kk wm xl eq lb">
-                                    <a href="blog-single.html">{blog.title}</a>
-                                </h4>
-                            </div>
-                        </div>
-                    ))}
-                </div>
+                        ))}
+                    </div>
+
             </section>
 
             <Footer />

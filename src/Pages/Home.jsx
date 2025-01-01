@@ -13,7 +13,7 @@ import icon02 from "./images/icon-02.svg";
 import icon03 from "./images/icon-03.svg";
 import one from './images/1.png'
 import two from './images/2.png'
-
+import blogs from "./blogsList.js";
 import shape05 from "./images/shape-05.svg";
 import shape06 from "./images/shape-06.svg";
 import shape07 from "./images/shape-07.svg";
@@ -84,29 +84,6 @@ function Home() {
     );
     
 
-    const blogs = [
-        {
-            id: 1,
-            image: blog01,
-            title: "Free advertising for your online business",
-            date: "25 Dec, 2025",
-            author: "Musharof Chy",
-        },
-        {
-            id: 2,
-            image: blog02,
-            title: "9 simple ways to improve your design skills",
-            date: "25 Dec, 2025",
-            author: "Musharof Chy",
-        },
-        {
-            id: 3,
-            image: blog03,
-            title: "Tips to quickly improve your coding speed.",
-            date: "25 Dec, 2025",
-            author: "Musharof Chy",
-        },
-    ];
 
     return (
 
@@ -461,7 +438,7 @@ function Home() {
                         <p className="bb on/5 wo/5 hq">{sectionTitleText}</p>
                     </div>
 
-                    <div className="bb ye ki xn vq jb jo oo">
+                    <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:mx-10 min-[220px]:mx-10">
                         {blogs.map((blog) => (
                             <div key={blog.id} className="animate_top sg vk rm xm" style={{ marginLeft: 20, background: 'white' }}>
                                 <div className="c rc i z-1 pg">

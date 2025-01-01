@@ -10,7 +10,7 @@ const blogs = [
     "id": 1,
     "title": "Lift and Shift Migration of Cloud Services",
     "author": "John Doe",
-    "date": "2024-01-01",
+    "date": "2025-01-01",
     "content": `
         <div>
       <p class="italic">
@@ -104,7 +104,7 @@ const blogs = [
     "id": 2,
     "title": "Monolithic Architecture vs Microservices Architecture",
     "author": "John Doe",
-    "date": "2024-01-01",
+    "date": "2025-01-01",
     "content": `
           <p class ="italic mb-6">
             The comparison between <strong>Monolithic Architecture</strong> and
@@ -256,7 +256,7 @@ const blogs = [
     "id": 3,
     "title": "Why to Move to Cloud Platforms from Traditional Infrastructure",
     "author": "Jane Smith",
-    "date": "2024-01-10",
+    "date": "2025-01-10",
     "content": `
 
       <p class ="italic mb-6">
@@ -469,7 +469,7 @@ const blogs = [
     "id": 4,
     "title": "Benefits of agile application development",
     "author": "Jane Smith",
-    "date": "2024-01-10",
+    "date": "2025-01-10",
     "content": `
     
       <div class="  text-gray-800 ">
@@ -593,7 +593,7 @@ const blogs = [
     "id": 5,
     "title": "Build or Refactor Microservices aligned with 12 factors",
     "author": "Jane Smith",
-    "date": "2024-01-10",
+    "date": "2025-01-10",
     "content": `
 
         <div class="p-6">
