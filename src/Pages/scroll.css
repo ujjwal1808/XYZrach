@@ -67,7 +67,7 @@ ol.steps::after {
 .hh {
   background: #e6f1ff;
   position: relative;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 .hh::before {
