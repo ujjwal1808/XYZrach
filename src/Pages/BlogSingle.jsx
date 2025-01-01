@@ -25,19 +25,19 @@ const BlogSingle = () => {
                     </p>
                 </div>
             </div>
-            <div className="lg:mx-48 my-12 text-justify  min-[220px]:mx-10">
-                <Link to="/blogs" className='text-blue-500 my-5'>
-                <i class="fa-solid fa-arrow-left mr-2 "></i>
+
+            <div className="lg:mx-60 my-12 text-justify min-[220px]:mx-10">
+                <Link to="/blogs" className="text-blue-500 my-5">
+                    <i className="fa-solid fa-arrow-left mr-2"></i>
                     Go Back
                 </Link>
-                <h1 className='text-3xl lg:text-4xl font-bold mb-6 text-black'>{blog.title}</h1>
-                <div className="w-full h-96 my-10">
-                    <img src={blog.image} alt="" className='w-full h-full rounded-2xl' />
+                <h1 className="text-3xl lg:text-4xl font-bold mb-6 text-black">{blog.title}</h1>
+                <div className="w-full h-full my-10">
+                    <img src={blog.image} alt="" className="w-full h-full rounded-2xl object-cover" />
                 </div>
-                <div className="text-gray-700" dangerouslySetInnerHTML={{ __html: blog.content }}>
-
-                </div>
+                <div className="text-gray-700" dangerouslySetInnerHTML={{ __html: blog.content }}></div>
             </div>
+
             <Footer />
         </div>
     )

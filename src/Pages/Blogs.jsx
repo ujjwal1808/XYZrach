@@ -26,6 +26,7 @@ const Blogs = () => {
                     </p>
                 </div>
             </div>
+            
             <section className="ji gp uq">
                 <div className="animate_top bb ze rj ki xn vq">
                     <h2 className="fk vj pr kk wm on/5 gq/2 bb _b">Our Blogs</h2>
