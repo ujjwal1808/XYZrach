@@ -3,8 +3,6 @@ import React, {useState, useEffect} from 'react'
 import '../Pages/style.css';
 import '../Pages/bundle.js';
 import { Link } from 'react-router-dom';
-import logo_dark from "../Pages/images/logo-dark.svg";
-import icon_moon from "../Pages/images/icon-moon.svg";
 import mainLogo from "../Pages/images/45 png (2).png"
 
 
@@ -35,10 +33,9 @@ const Header = (props) => {
             >
                 <div className="bb ze ki xn 2xl:ud-px-0 oo wf yf i">
                     <div className="vd to/4 tc wf yf">
-                        <a href="index.html">
+                        <Link to="/">
                             <img className="om" src={mainLogo} alt="Logo Light" width={150}/>
-                            <img className="xc nm" src={logo_dark} alt="Logo Dark" />
-                        </a>
+                        </Link>
                         <button className="po rc" onClick={() => setNavigationOpen(!navigationOpen)}>
                             <span className="rc i pf re pd ">
                                 <span className="du-block h q vd yc">
@@ -77,6 +74,9 @@ const Header = (props) => {
                             <ul className="tc _o sf yo cg ep col-white">
                                 <li>
                                     <Link
+                                    onClick={() => {
+                                        window.scroll(0, 0);
+                                      }}
                                         to="/"
                                         className={`xl ${props.data === "home" ? "mk" : ""}`}
                                     >
@@ -84,12 +84,17 @@ const Header = (props) => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/about-us" className={`xl ${props.data === "aboutus" ? "mk" : ""}`}>
+                                    <Link to="/about-us" onClick={() => {
+    window.scroll(0, 0);
+  }} className={`xl ${props.data === "aboutus" ? "mk" : ""}`}>
                                         About Us
                                     </Link>
                                 </li>
                                 <li className="c i">
                                     <Link
+                                    onClick={() => {
+                                        window.scroll(0, 0);
+                                      }}
                                         to="/services"
                                         className={`xl tc wf yf bg ${(
                                             props.data ==="services"
@@ -157,12 +162,16 @@ const Header = (props) => {
                                     </ul>
                                 </li>
                                 <li>
-                                    <Link to="/blogs" className={`xl ${props.data === "blogs" ? "mk" : ""}`}>
+                                    <Link to="/blogs" onClick={() => {
+    window.scroll(0, 0);
+  }} className={`xl ${props.data === "blogs" ? "mk" : ""}`}>
                                         Blogs
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/contact" className={`xl ${props.data === "contact" ? "mk" : ""}`}>
+                                    <Link to="/contact" onClick={() => {
+    window.scroll(0, 0);
+  }} className={`xl ${props.data === "contact" ? "mk" : ""}`}>
                                         Contact Us
                                     </Link>
                                 </li>

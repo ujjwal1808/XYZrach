@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-// import { gsap } from "gsap";
 import "./card.scss"
+import { Link } from "react-router-dom";
 
 const Cards = () => {
 
@@ -15,7 +15,7 @@ const Cards = () => {
                     
                 </div>
                 <div class="card-footer ">
-                    <a href="#" class="btn-countdown">Read more</a>
+                    <Link to="/services" onClick={() => { window.scroll(0, 0); }} class="btn-countdown">Read more</Link>
                 </div>
             </div>
             <div class="card blue">
@@ -28,7 +28,7 @@ const Cards = () => {
                 <div class="card-footer">
                     
 
-                    <a href="#" class="btn-countdown">Read more</a>
+                    <Link to="/services" onClick={() => { window.scroll(0, 0); }} class="btn-countdown">Read more</Link>
                 </div>
             </div>
             <div class="card blue">
@@ -40,7 +40,7 @@ const Cards = () => {
                 </div>
                 <div class="card-footer">
                     
-                    <a href="#" class="btn-countdown">Read more</a>
+                    <Link to="/services" onClick={() => { window.scroll(0, 0); }} class="btn-countdown">Read more</Link>
                 </div>
             </div>
             <div class="card blue">
@@ -54,7 +54,7 @@ const Cards = () => {
                 <div class="card-footer">
                     
 
-                    <a href="#" class="btn-countdown">Read more</a>
+                    <Link to="/services" onClick={() => { window.scroll(0, 0); }} class="btn-countdown">Read more</Link>
                 </div>
             </div>
             <div class="card blue">
@@ -66,9 +66,7 @@ const Cards = () => {
                     
                 </div>
                 <div class="card-footer">
-                    
-
-                    <a href="#" class="btn-countdown">Read more</a>
+                    <Link to="/services" onClick={() => { window.scroll(0, 0); }} class="btn-countdown">Read more</Link>
                 </div>
             </div>
             

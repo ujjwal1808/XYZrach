@@ -2,18 +2,12 @@ import React from 'react'
 import Header from '../Components/Header'
 import "./style.css";
 import "./bundle.js"
-
-import shape05 from "./images/shape-05.svg";
+import AboutVideo from "./images/AboutVideo.gif"
 import shape16 from "./images/shape-06.svg";
-import shape07 from "./images/shape-07.svg";
-import about01 from "./images/about-01.png";
-import about02 from "./images/about-02.png";
-import about03 from "./images/about-03.png";
 import aboutDesign1 from './images/Untitled design (5).png'
 import aboutDesign2 from './images/Untitled design (6).png'
-import aboutDesign3 from './images/Untitled design (4).jpg'
-import iconPlay from "./images/icon-play.svg";
 import Footer from '../Components/Footer.jsx';
+import { Link } from 'react-router-dom';
 
 
 
@@ -23,7 +17,7 @@ const AboutUs = () => {
       <Header data="aboutus" />
       <main className='hh'>
         <div className="relative h-screen w-full">
-          <img src={aboutDesign3} alt="Background Image" className="object-cover object-center w-full h-full" />
+          <img src={AboutVideo} alt="Background Image" className="object-cover object-center w-full h-full" />
           {/* <img src='' alt="Background Image" className="absolute inset-0 w-full h-full object-cover filter blur-sm" /> */}
           <div className="absolute inset-0 bg-blue-950 bg-opacity-50"></div>
           <div className="absolute inset-0 flex flex-col items-center justify-center">
@@ -54,9 +48,9 @@ const AboutUs = () => {
                 </p>
 
                 <div className="tc tf yo zf mb">
-                  <a href="#" className="ek jk lk gh gi hi rg ml il vc _d _l">
+                  <Link to="/contact" onClick={() => { window.scroll(0, 0); }} className="ek jk lk gh gi hi rg ml il vc _d _l">
                     Contact us
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -81,9 +75,9 @@ const AboutUs = () => {
                 <p className='gb text-blue-200'>By implementing innovative solutions, we help businesses optimize workflows, reduce downtime, and foster a culture of continuous improvement.</p>
 
                 <div className="tc tf yo zf mb">
-                  <a href="#" className="ek jk lk gh gi hi rg ml il vc _d _l">
+                  <Link to="/contact" onClick={() => { window.scroll(0, 0); }} className="ek jk lk gh gi hi rg ml il vc _d _l">
                     Contact us
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="animate_left xc gn gg jn/2 i">

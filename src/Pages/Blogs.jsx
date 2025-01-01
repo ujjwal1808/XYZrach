@@ -1,16 +1,11 @@
-import React, { useContext, useState } from 'react'
+import React from 'react'
 import Header from '../Components/Header'
 
-import hero from "./images/Untitled design (4).jpg"
-import blog01 from "./images/blog-01.png"
-import blog02 from "./images/blog-02.png"
-import blog03 from "./images/blog-03.png"
-import iconMan from "./images/icon-man.svg";
+import AboutVideo from "./images/AboutVideo.gif"
+import shape16 from "./images/shape-16.svg";
 import iconCalendar from "./images/icon-calender.svg";
 import blogs from './blogsList'
-// import iconCalendar from "./images/icon-calender.svg";
 import Footer from '../Components/Footer'
-// import xyrachContext from '../context/context'
 import { Link } from 'react-router-dom'
 
 const Blogs = () => {
@@ -18,7 +13,7 @@ const Blogs = () => {
         <div>
             <Header data="blogs" />
             <div className="relative h-screen w-full">
-                <img src={hero} alt="Background Image" className="object-cover object-center w-full h-full" />
+                <img src={AboutVideo} alt="Background Image" className="object-cover object-center w-full h-full" />
                 {/* <img src="" alt="Background Image" className="absolute inset-0 w-full h-full object-cover filter blur-sm" /> */}
                 <div className="absolute inset-0 bg-blue-950 bg-opacity-50"></div>
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
@@ -47,8 +42,8 @@ const Blogs = () => {
                                 <div className="yh">
                                 <div className="tc uf wf ag jq">
                                         <div className="tc wf ag">
-                                            <img src={iconMan} alt="User" />
-                                            <p>{blog.author}</p>
+                                            <div className={`${blog.color} p-2 rounded-full`}></div>
+                                            <p>{blog.core}</p>
                                         </div>
                                         <div className="tc wf ag">
                                             <img src={iconCalendar} alt="Calendar" />
@@ -64,6 +59,26 @@ const Blogs = () => {
                     </div>
 
             </section>
+            <section className="i pg gh ji">
+                    <img className="h p q" src={shape16} alt="Bg Shape" />
+
+                    <div className="bb ye i z-10 ki xn dr">
+                        <div className="tc uf sn tn un gg">
+                            <div className="animate_left to/2">
+                                <h2 className="fk vj zp pr lk ac">Join with 5000+ Startups Growing with Base.</h2>
+                                <p className="lk">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a
+                                    efficitur leo. Ut venenatis rhoncus.
+                                </p>
+                            </div>
+                            <div className="animate_right bf">
+                                <Link to="/contact" onClick={() => { window.scroll(0, 0); }} className="vc ek kk hh rg ol il cm gi hi">
+                                    Get Started Now
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
             <Footer />
 
