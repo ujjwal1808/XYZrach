@@ -33,9 +33,9 @@ const Blogs = () => {
 
                 <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:mx-10 min-[220px]:mx-10">
                         {blogs.map((blog) => (
-                            <div key={blog.id} className="animate_top vg vk rm xm" style={{ marginLeft: 20, background: 'white' }}>
+                            <div key={blog.id} className="animate_top rounded-xl vk rm xm border-gray-200 border" style={{ marginLeft: 20, background: 'white' }}>
                                 <div className="c rc i z-1 pg">
-                                    <img className="w-full" src={blog.image} alt="Blog" />
+                                    <img className="w-full rounded-t-xl" src={blog.image} alt="Blog" />
 
                                     <div className="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10">
                                         <Link to={`/blogs-single/${blog.id}`} className="vc ek rg lk gh sl ml il gi hi">
