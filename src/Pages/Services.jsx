@@ -10,6 +10,7 @@ import five from './images/5.png'
 import Footer from '../Components/Footer'
 import shape16 from "./images/shape-06.svg";
 import { Link } from 'react-router-dom'
+import CallToAction from '../Components/CallToAction'
 const Services = () => {
   return (
     <div>
@@ -20,16 +21,16 @@ const Services = () => {
           {/* <img src="" alt="Background Image" className="absolute inset-0 w-full h-full object-cover filter blur-sm" /> */}
           <div className="absolute inset-0 bg-blue-950 bg-opacity-50"></div>
           <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <h1 className="text-8xl text-white font-bold ">Services</h1>
+            <h1 className="text-8xl text-white font-bold max-[378px]:text-6xl">Services</h1>
             <p className="text-lg text-white mt-4 text-center">Get to know our list of services and tech stack in helping <br /> enterprise, startups and agencies.</p>
           </div>
         </div>
 
         <h1 className='text-bold vj zp or kk wm wb tt'>Streamline Your Business with Digital Product Development Services</h1>
         <p className='mb-20 w-9/12 text-center m-auto '>Get scalable digital solutions from the team of experts who will cover the full development lifecycle, from ideation and prototyping to launch and ongoing maintenance, ensuring you have the tools and resources to succeed in the digital marketplace.</p>
-        <ol className="steps">
+        <ol className="steps ">
 
-          <li className='m-10 ml-32 '>
+          <li className='m-10 ml-32'>
             <div className="block block--left justify-items-center">
               <img src={one_} alt="" className='w-96' />
             </div>
@@ -52,7 +53,7 @@ const Services = () => {
             </div>
           </li>
 
-          <li className='m-10 ml-32 '>
+          <li className='m-10 ml-32'>
             <div className="block block--left justify-items-center">
               <img src={two_} alt="" className='w-96' />
             </div>
@@ -75,7 +76,7 @@ const Services = () => {
               </div>
           </li>
 
-          <li className='m-10 ml-32 '>
+          <li className='m-10 ml-32'>
             <div className="block block--left justify-items-center">
               <img src={three} alt="" className='w-96'/>
             </div>
@@ -98,7 +99,7 @@ const Services = () => {
             </div>
           </li>
 
-          <li className='m-10 ml-32 '>
+          <li className='m-10 ml-32'>
             <div className="block block--left justify-items-center">
             <img src={four} alt="" className='w-96'/>
             </div>
@@ -122,7 +123,7 @@ const Services = () => {
             </div>
           </li>
 
-          <li className='m-10 ml-32 '>
+          <li className='m-10 ml-32'>
             <div className="block block--left justify-items-center">
               <img src={five} alt="" className='w-96'/>
             </div>
@@ -147,26 +148,7 @@ const Services = () => {
           </li>
 
         </ol>
-        <section className="i pg gh ji">
-                    <img className="h p q" src={shape16} alt="Bg Shape" />
-
-                    <div className="bb ye i z-10 ki xn dr">
-                        <div className="tc uf sn tn un gg">
-                            <div className="animate_left to/2">
-                                <h2 className="fk vj zp pr lk ac">Join with 5000+ Startups Growing with Base.</h2>
-                                <p className="lk">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a
-                                    efficitur leo. Ut venenatis rhoncus.
-                                </p>
-                            </div>
-                            <div className="animate_right bf">
-                                <Link to="/contact" onClick={() => { window.scroll(0, 0); }} className="vc ek kk hh rg ol il cm gi hi">
-                                    Get Started Now
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+        <CallToAction/>
       </main>
       <Footer/>
     </div>

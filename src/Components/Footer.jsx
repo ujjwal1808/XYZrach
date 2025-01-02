@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css"
+import "../Pages/style.css"
 import mainLogo from "../Pages/images/45 png (2).png"
 import { Link } from "react-router-dom";
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
         
         <div className="ji ">
 
-          <div className="tc uf  fg w-full">
+          <div className="tc max-[768px]:flex-wrap gap-10 w-full">
             <div className="animate_top zd/2 to/4">
               <a href="index.html">
                 <img src={mainLogo} width={200} alt="Logo Light" className="om" />
@@ -20,7 +20,7 @@ const Footer = () => {
               <div className="mb-7 w-11/12 ">
                 <div className="mb-1 flex items-center">
 
-                  <i class="fa-solid fa-envelope mr-2 "></i>
+                  <i className="fa-solid fa-envelope mr-2 "></i>
                   <p className="text-sm">
                   info@xyrachsolutions.com
                   </p> 
@@ -28,7 +28,7 @@ const Footer = () => {
 
                 <div className="flex items-center">
 
-                  <i class="fa-solid fa-location-dot mr-2"></i> 
+                  <i className="fa-solid fa-location-dot mr-2"></i> 
                   <p className="text-sm">
                   Toronto 🇨🇦
                   </p>
@@ -40,13 +40,13 @@ const Footer = () => {
                 
                 <li>
                   <Link to="https://www.instagram.com/xyrachtech/?igsh=c2tjb2Jsd3o0MDds">
-                  <i class="fa-brands fa-instagram text-2xl hover:text-blue-600"></i>
+                  <i className="fa-brands fa-instagram text-2xl hover:text-blue-600"></i>
                   </Link>
                 </li>
               </ul>
             </div>
 
-            <div className="vd roo tc sf rn un fg">
+            <div className="vd roo tc sf rn un max-[768px]:gap-8">
               <div className="">
                 <h4 className="kk wm tj ec">Quick Links</h4>
                 <ul>

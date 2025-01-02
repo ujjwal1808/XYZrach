@@ -1,7 +1,5 @@
 import React, {useState, useEffect} from 'react'
-// import logo_light from "./images/logo-light.svg";
 import '../Pages/style.css';
-import '../Pages/bundle.js';
 import { Link } from 'react-router-dom';
 import mainLogo from "../Pages/images/45 png (2).png"
 

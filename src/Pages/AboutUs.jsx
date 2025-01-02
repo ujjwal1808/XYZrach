@@ -1,13 +1,12 @@
 import React from 'react'
 import Header from '../Components/Header'
 import "./style.css";
-import "./bundle.js"
 import AboutVideo from "./images/AboutVideo.gif"
-import shape16 from "./images/shape-06.svg";
-import aboutDesign1 from './images/Untitled design (5).png'
-import aboutDesign2 from './images/Untitled design (6).png'
+import aboutDesign1 from './images/standard-quality-control-concept-m.jpg'
+import aboutDesign2 from './images/standard-quality-control-collage-concept.jpg'
 import Footer from '../Components/Footer.jsx';
 import { Link } from 'react-router-dom';
+import CallToAction from '../Components/CallToAction.jsx';
 
 
 
@@ -31,7 +30,7 @@ const AboutUs = () => {
             <div className="tc wf gg qq">
               <div className="animate_left xc gn gg jn/2 i">
                 <div>
-                  <img src={aboutDesign1} alt="About" className="ib" />
+                  <img src={aboutDesign1} alt="About" className="ib rounded-xl shadow-xl shadow-gray-400" />
 
                 </div>
                 <div>
@@ -82,7 +81,7 @@ const AboutUs = () => {
               </div>
               <div className="animate_left xc gn gg jn/2 i">
                 <div>
-                  <img src={aboutDesign2} alt="About" className="ib" />
+                  <img src={aboutDesign2} alt="About" className="ib rounded-xl shadow-2xl" />
 
                 </div>
                 <div>
@@ -146,26 +145,7 @@ const AboutUs = () => {
                     </div>
                 </section>
 
-        <section className="i pg gh ji">
-                    <img className="h p q" src={shape16} alt="Bg Shape" />
-
-                    <div className="bb ye i z-10 ki xn dr">
-                        <div className="tc uf sn tn un gg">
-                            <div className="animate_left to/2">
-                                <h2 className="fk vj zp pr lk ac">Join with 5000+ Startups Growing with Base.</h2>
-                                <p className="lk">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a
-                                    efficitur leo. Ut venenatis rhoncus.
-                                </p>
-                            </div>
-                            <div className="animate_right bf">
-                                <a href="#" className="vc ek kk hh rg ol il cm gi hi">
-                                    Get Started Now
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <CallToAction/>
       </main>
       <Footer/>
     </div>

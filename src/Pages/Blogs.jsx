@@ -1,12 +1,11 @@
 import React from 'react'
 import Header from '../Components/Header'
-
 import AboutVideo from "./images/AboutVideo.gif"
-import shape16 from "./images/shape-16.svg";
 import iconCalendar from "./images/icon-calender.svg";
 import blogs from './blogsList'
 import Footer from '../Components/Footer'
 import { Link } from 'react-router-dom'
+import CallToAction from '../Components/CallToAction';
 
 const Blogs = () => {
     return (
@@ -59,26 +58,7 @@ const Blogs = () => {
                     </div>
 
             </section>
-            <section className="i pg gh ji">
-                    <img className="h p q" src={shape16} alt="Bg Shape" />
-
-                    <div className="bb ye i z-10 ki xn dr">
-                        <div className="tc uf sn tn un gg">
-                            <div className="animate_left to/2">
-                                <h2 className="fk vj zp pr lk ac">Join with 5000+ Startups Growing with Base.</h2>
-                                <p className="lk">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a
-                                    efficitur leo. Ut venenatis rhoncus.
-                                </p>
-                            </div>
-                            <div className="animate_right bf">
-                                <Link to="/contact" onClick={() => { window.scroll(0, 0); }} className="vc ek kk hh rg ol il cm gi hi">
-                                    Get Started Now
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+            <CallToAction/>
 
             <Footer />
 

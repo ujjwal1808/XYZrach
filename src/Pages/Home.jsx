@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
-
 import Cards from '../Components/Cards.jsx'
 import { Link } from "react-router-dom";
 import shape05 from "./images/shape-05.svg";
@@ -18,9 +17,9 @@ import icon04 from "./images/icon-04.svg";
 import icon05 from "./images/icon-05.svg";
 import icon06 from "./images/icon-06.svg";
 import icon07 from "./images/icon-07.svg";
-import shape16 from "./images/shape-16.svg";
 import Header from "../Components/Header.jsx";
 import Footer from "../Components/Footer.jsx";
+import CallToAction from "../Components/CallToAction.jsx";
 
 
 function Home() {
@@ -205,9 +204,9 @@ return (
                 <section className="i pg ji gp uq">
                     <span className="rc h s r vd fd/5 fh rm hh"></span>
                     <img src={shape08} alt="Shape Bg" className="h q r" />
-                    <img src={shape09} alt="Shape" className="of h y z/2" />
+                    <img src={shape09} alt="Shape" className="of h y z/2 lg:w-40" />
                     <img src={shape10} alt="Shape" className="h _ aa" />
-                    <img src={shape11} alt="Shape" className="of h m ba" />
+                    <img src={shape11} alt="Shape" className="of h m ba lg:w-40" />
 
                     <div
                         x-data="{ sectionTitle: `Meet With Our Creative Dedicated Team`, sectionTitleText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`}">
@@ -227,8 +226,8 @@ return (
                             <h2 className="fk vj pr kk wm on/5 gq/2 bb _b">
                                 Our Services
                             </h2>
-                            <p className="bb on/5 wo/5 hq " x-text={sectionTitleText}>
-                                {sectionTitleText}
+                            <p className="bb on/5 wo/5 hq " >
+                            We provide a comprehensive range of technology and development services to help businesses thrive in the digital era.
                             </p>
                         </div>
 
@@ -311,7 +310,7 @@ return (
                     </div>
                 </section>
 
-                {/* Trusted Brands Section */}
+                
                 <section id="features">
                     <div className="bb ze ki yn 2xl:ud-px-12.5 mb-28">
                         <div className="cb">
@@ -320,7 +319,7 @@ return (
                                     How it Works
                                 </h2>
                                 <p className="bb on/5 wo/5 hq ">
-                                    At Xyrach, we’re more than just developers – we’re your partners in success. Contact us today to discover how we can transform your ideas into powerful digital solutions.
+                                Our streamlined process ensures a seamless journey from idea to execution. Here's how we bring your vision to life
                                 </p>
                             </div>
 
@@ -364,30 +363,7 @@ return (
                     </div>
                 </section>
 
-                {/* Latest Blogs Section */}
-
-
-                {/* Join Section */}
-                <section className="i pg gh ji">
-                    <img className="h p q" src={shape16} alt="Bg Shape" />
-
-                    <div className="bb ye i z-10 ki xn dr">
-                        <div className="tc uf sn tn un gg">
-                            <div className="animate_left to/2">
-                                <h2 className="fk vj zp pr lk ac">Join with 5000+ Startups Growing with Base.</h2>
-                                <p className="lk">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a
-                                    efficitur leo. Ut venenatis rhoncus.
-                                </p>
-                            </div>
-                            <div className="animate_right bf">
-                                <Link to="/contact" onClick={() => { window.scroll(0, 0); }} className="vc ek kk hh rg ol il cm gi hi">
-                                    Get Started Now
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <CallToAction/>
 
 
             </main >

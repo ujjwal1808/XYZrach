@@ -91,6 +91,7 @@ ol.steps::after {
   .block--right {
     padding: 1rem;
   }
+  
 }
 
 @media (min-width: 1024px) {
@@ -105,6 +106,39 @@ ol.steps::after {
   .block--left,
   .block--right {
     padding: 2rem;
+  }
+
+  
+}
+
+
+/* @media (max-width:500px){
+  li{
+    margin-left: 50px;
+  }
+} */
+
+
+/* Added styles for screens smaller than 767px */
+@media (max-width: 767px) {
+  ol.steps li {
+    grid-template-columns: 1fr;
+    margin-left: 25px;
+  }
+
+  ol.steps li::before {
+    display: none;
+  }
+
+  .block--left {
+    display: none;
+  }
+
+  .block--right {
+    grid-column: span 3;
+  }
+  ol.steps::after {
+    margin-left: 30px;
   }
 }
 
