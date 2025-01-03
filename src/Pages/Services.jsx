@@ -2,15 +2,14 @@ import React from 'react'
 import Header from '../Components/Header'
 import './scroll.css'
 import AboutVideo from "./images/AboutVideo.gif"
-import one_ from './images/1_.png'
-import two_ from './images/2_.png'
-import three from './images/3.png'
-import four from './images/4.png'
-import five from './images/5.png'
+import one_ from './images/Mobile.jpeg'
+import two_ from './images/WebAppDev.jpg'
+import three from './images/uiux.webp'
+import four from './images/integrationservices.jpg'
+import five from './images/StaffAugmentation.png'
 import Footer from '../Components/Footer'
-import shape16 from "./images/shape-06.svg";
-import { Link } from 'react-router-dom'
 import CallToAction from '../Components/CallToAction'
+import { Link } from 'react-router-dom'
 const Services = () => {
   return (
     <div>
@@ -32,7 +31,7 @@ const Services = () => {
 
           <li className='m-10 ml-32'>
             <div className="block block--left justify-items-center">
-              <img src={one_} alt="" className='w-96' />
+              <img src={one_} alt="" className='w-96 rounded-xl shadow-lg shadow-gray-400'  />
             </div>
             <div className="block  block--right">
               <div className="animate_right jn p-5">
@@ -45,9 +44,9 @@ const Services = () => {
                 </p>
 
                 <div className="tc tf yo zf mb">
-                  <a href="#" className="ek jk lk gh gi hi rg ml il vc _d _l">
+                  <Link to="/contact" onClick={() => { window.scroll(0, 0); }} className="ek jk lk gh gi hi rg ml il vc _d _l">
                     Contact us
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -55,7 +54,7 @@ const Services = () => {
 
           <li className='m-10 ml-32'>
             <div className="block block--left justify-items-center">
-              <img src={two_} alt="" className='w-96' />
+              <img src={two_} alt="" className='w-96 rounded-xl shadow-lg shadow-gray-400' />
             </div>
               <div className="block block--right">
                 <div className="animate_right jn p-5">
@@ -68,9 +67,9 @@ const Services = () => {
                   </p>
 
                   <div className="tc tf yo zf mb">
-                    <a href="#" className="ek jk lk gh gi hi rg ml il vc _d _l">
-                      Contact us
-                    </a>
+                  <Link to="/contact" onClick={() => { window.scroll(0, 0); }} className="ek jk lk gh gi hi rg ml il vc _d _l">
+                    Contact us
+                  </Link>
                   </div>
                 </div>
               </div>
@@ -78,7 +77,7 @@ const Services = () => {
 
           <li className='m-10 ml-32'>
             <div className="block block--left justify-items-center">
-              <img src={three} alt="" className='w-96'/>
+              <img src={three} alt="" className='w-96 rounded-xl shadow-lg shadow-gray-400'/>
             </div>
             <div className="block block--right">
             <div className="animate_right jn p-5">
@@ -91,9 +90,9 @@ const Services = () => {
                   </p>
 
                   <div className="tc tf yo zf mb">
-                    <a href="#" className="ek jk lk gh gi hi rg ml il vc _d _l">
-                      Contact us
-                    </a>
+                  <Link to="/contact" onClick={() => { window.scroll(0, 0); }} className="ek jk lk gh gi hi rg ml il vc _d _l">
+                    Contact us
+                  </Link>
                   </div>
                 </div>
             </div>
@@ -101,7 +100,7 @@ const Services = () => {
 
           <li className='m-10 ml-32'>
             <div className="block block--left justify-items-center">
-            <img src={four} alt="" className='w-96'/>
+            <img src={four} alt="" className='w-96 rounded-xl shadow-lg shadow-gray-400'/>
             </div>
             <div className="block block--right">
             <div className="animate_right jn p-5">
@@ -115,9 +114,9 @@ const Services = () => {
                   </p>
 
                   <div className="tc tf yo zf mb">
-                    <a href="#" className="ek jk lk gh gi hi rg ml il vc _d _l">
-                      Contact us
-                    </a>
+                  <Link to="/contact" onClick={() => { window.scroll(0, 0); }} className="ek jk lk gh gi hi rg ml il vc _d _l">
+                    Contact us
+                  </Link>
                   </div>
                 </div>
             </div>
@@ -125,7 +124,7 @@ const Services = () => {
 
           <li className='m-10 ml-32'>
             <div className="block block--left justify-items-center">
-              <img src={five} alt="" className='w-96'/>
+              <img src={five} alt="" className='w-96 rounded-xl shadow-lg shadow-gray-400'/>
             </div>
             <div className="block block--right">
             <div className="animate_right jn p-5">
@@ -139,9 +138,9 @@ const Services = () => {
                   </p>
 
                   <div className="tc tf yo zf mb">
-                    <a href="#" className="ek jk lk gh gi hi rg ml il vc _d _l">
-                      Contact us
-                    </a>
+                  <Link to="/contact" onClick={() => { window.scroll(0, 0); }} className="ek jk lk gh gi hi rg ml il vc _d _l">
+                    Contact us
+                  </Link>
                   </div>
                 </div>
             </div>
